@@ -1,0 +1,177 @@
+body
+{
+    background-color: #f3f3f3;
+    padding-top: 15px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+*, *:before, *:after
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+input,
+textarea,
+button
+{
+    border: none;
+    outline: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+ul
+{
+    margin: 0;
+}
+
+a,a:hover
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+input::-webkit-input-placeholder {    color: #aaaaaa;}
+input:-moz-placeholder {    color: #aaaaaa;}
+textarea::-webkit-input-placeholder {    color: #aaaaaa;}
+textarea:-moz-placeholder {    color: #aaaaaa;}
+
+img
+{
+    display: block;
+    margin: auto;
+}
+
+i.fa
+{
+    display: block;
+}
+
+.pointer
+{
+    cursor: pointer;
+}
+
+.inline-top-between-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.inline-top-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.inline-middle-between-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-middle-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.inline-bottom-between-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.inline-middle-around-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inline-bottom-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.inline-middle-left-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inline-middle-right-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.inline-top-right-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent
+}

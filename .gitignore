@@ -1,0 +1,6 @@
+.idea
+node_modules
+build
+client/vendor
+server/datasources.json
+.strong-pm

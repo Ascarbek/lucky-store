@@ -1,0 +1,34 @@
+{
+    "name": "lucky-store",
+    "description": "E-Commerce engine",
+    "main": "index.js",
+    "authors": [
+        "ascarbek@gmail.com"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "ecommerce"
+    ],
+    "homepage": "https://github.com/Ascarbek/lucky-store",
+    "moduleType": [],
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.4.7",
+        "angular-ui-router": "ui-router#~0.2.15",
+        "angular-animate": "~1.4.7",
+        "angular-ui-mask": "~1.4.7",
+        "angular-touch": "~1.4.7",
+        "angular-carousel": "~0.3.13",
+        "angular-cookies": "~1.4.7",
+        "angular-sanitize": "~1.4.7",
+        "font-awesome": "fontawesome#~4.4.0",
+        "open-sans-fontface": "~1.4.2"
+    }
+}
