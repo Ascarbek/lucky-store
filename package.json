@@ -34,6 +34,7 @@
     "gulp-uglify": "^1.4.1",
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.1",
     "loopback-component-storage": "^1.5.1",
     "loopback-connector-postgresql": "^2.3.0",
     "loopback-datasource-juggler": "^2.19.0",
