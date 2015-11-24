@@ -1,0 +1,16 @@
+.product-catalog
+{
+    width: 950px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.product-catalog .products-list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -9px;
+}
