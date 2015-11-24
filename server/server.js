@@ -2,6 +2,7 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 var path = require('path');
 var app = module.exports = loopback();
+var favicon = require('serve-favicon');
 
 app.start = function() {
     // start the web server
@@ -20,11 +21,11 @@ app.start = function() {
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname, function(err) {
     if (err) throw err;
+    app.use('/favicon.ico', loopback.static(path.resolve(__dirname, '..', 'favicon.ico')));
 
     app.use('/app', loopback.static(path.resolve(__dirname, '..', 'client/app')));
     app.use('/content', loopback.static(path.resolve(__dirname, '..', 'client/content')));
     app.use('/vendor', loopback.static(path.resolve(__dirname, '..', 'client/vendor')));
-    //app.use('/pdf', loopback.static(path.resolve(__dirname, '..', 'client/pdf')));
 
     app.all('*', function(req, res, next) {
         // Just send the index.html for other files to support HTML5Mode
