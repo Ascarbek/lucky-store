@@ -6,7 +6,7 @@
 
     angular
         .module('LuckyStore.controllers')
-        .controller('ProductCatalog', ['$scope', 'products', function($scope, products){
+        .controller('ProductCatalog', ['$scope', 'svcProductCatalog', function($scope, svcProductCatalog){
             var vm = this;
 
             vm.preview = function(product){
@@ -17,7 +17,7 @@
                 console.log('adding to cart...', product);
             };
 
-            vm.products = products.getProducts();
+            vm.products = svcProductCatalog.getProducts();
         }]);
 
 })();

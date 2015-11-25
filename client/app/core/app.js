@@ -6,9 +6,9 @@
 
     angular
         .module('LuckyStore', ['ui.router', 'LuckyStore.controllers', 'LuckyStore.directives', 'LuckyStore.services', 'angular-carousel', 'ngAnimate', 'ui.mask'])
-        .controller('AppCtrl', ['$scope', '$rootScope', '$log', 'siteData', function($scope, $rootScope, $log, siteData){
+        .controller('AppCtrl', ['$scope', '$rootScope', '$log', 'core', function($scope, $rootScope, $log, core){
 
-            this.siteNavigationItems = siteData.getSiteNavigationItems();
+            this.siteNavigationItems = core.getSiteNavigationItems();
 
         }]);
 

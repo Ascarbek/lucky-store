@@ -28,6 +28,10 @@ boot(app, __dirname, function(err) {
     app.use('/vendor', loopback.static(path.resolve(__dirname, '..', 'client/vendor')));
 
     app.all('*', function(req, res, next) {
+        // Handle the RESP API
+        if(req.path.substr(0,4) === '/api'){
+            return next();
+        }
         // Just send the index.html for other files to support HTML5Mode
         res.sendFile('index.html', { root: path.resolve(__dirname, '..', 'client') });
     });

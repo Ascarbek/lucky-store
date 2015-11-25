@@ -1,0 +1,21 @@
+{
+  "name": "newModel",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "propertyName1": {
+      "type": "string"
+    },
+    "propertyName11": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
