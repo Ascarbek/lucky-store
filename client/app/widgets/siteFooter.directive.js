@@ -8,14 +8,14 @@
         .module('LuckyStore.directives')
         .directive('lsSiteFooter', [function(){
             return {
-                restrict : 'E',
+                restrict : 'A',
                 scope : {
 
                 },
                 link : function(scope, element, attrs){
 
                 },
-                templateUrl : 'app/widgets/siteFooter.template.html'
+                templateUrl : '/app/widgets/siteFooter.template.html'
             }
         }]);
 })();

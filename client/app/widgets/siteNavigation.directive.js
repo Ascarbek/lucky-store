@@ -8,16 +8,16 @@
         .module('LuckyStore.directives')
         .directive('lsSiteNavigation', [function(){
             return {
-                restrict: 'E',
+                restrict: 'A',
                 scope : {
                     items : '=',
                     onSignIn : '&onSignIn',
                     onSignUp : '&onSignUp'
                 },
                 link: function(scope, element, attrs){
-                    
+
                 },
-                templateUrl : 'app/widgets/siteNavigation.template.html'
+                templateUrl : '/app/widgets/siteNavigation.template.html'
             }
         }]);
 })();

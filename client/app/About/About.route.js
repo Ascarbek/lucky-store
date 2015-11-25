@@ -13,7 +13,7 @@
                     title: 'About',
                     views: {
                         main: {
-                            templateUrl: 'app/About/About.page.html',
+                            templateUrl: '/app/About/About.page.html',
                             controller: 'About as vm'
                         }
                     }

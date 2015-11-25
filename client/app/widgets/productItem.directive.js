@@ -8,7 +8,7 @@
         .module('LuckyStore.directives')
         .directive('lsProductItem', [function(){
             return {
-                restrict: 'E',
+                restrict: 'A',
                 scope : {
                     itemName : '=',
                     itemPicture : '=',
@@ -21,7 +21,7 @@
                 link: function(scope, element, attrs){
 
                 },
-                templateUrl : 'app/widgets/productItem.template.html'
+                templateUrl : '/app/widgets/productItem.template.html'
             }
         }]);
 })();

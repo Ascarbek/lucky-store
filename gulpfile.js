@@ -26,8 +26,8 @@ gulp.task('inject-dev', function(){
     var appCss = gulp.src(['client/app/**/*.css'], {read: false});
 
     return gulp.src('client/index.html')
-        .pipe(inject(series(angular, restVendor, project, restProject), {relative : true}))
-        .pipe(inject(series(common, restCss, appCss), {relative : true}))
+        .pipe(inject(series(angular, restVendor, project, restProject), {relative : false, ignorePath: 'client'}))
+        .pipe(inject(series(common, restCss, appCss), {relative : false, ignorePath: 'client'}))
         .pipe(gulp.dest('client'));
 });
 

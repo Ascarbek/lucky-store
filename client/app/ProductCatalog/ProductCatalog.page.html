@@ -2,7 +2,7 @@
     <div class="catalog-title">
     </div>
     <div class="products-list">
-        <ls-product-item ng-repeat="p in vm.products" item-name="p.name" item-picture="p.picture" item-price="p.price" on-preview="vm.preview(p)" on-add-to-cart="vm.addToCart(p)"></ls-product-item>
+        <div ls-product-item ng-repeat="p in vm.products" item-name="p.name" item-picture="p.picture" item-price="p.price" on-preview="vm.preview(p)" on-add-to-cart="vm.addToCart(p)"></div>
     </div>
     <div class="catalog-paging">
 
