@@ -13,7 +13,7 @@
                     title: 'Product Catalog',
                     views: {
                         main: {
-                            templateUrl: 'app/productCatalog/productCatalog.page.html',
+                            templateUrl: 'app/ProductCatalog/ProductCatalog.page.html',
                             controller: 'ProductCatalog as vm'
                         }
                     }
